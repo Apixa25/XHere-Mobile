@@ -1,0 +1,6 @@
+rootProject.name = 'XHereMobile2'
+apply from: file("../node_modules/@react-native/gradle-plugin/src/main/kotlin/react.gradle")
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin') 
