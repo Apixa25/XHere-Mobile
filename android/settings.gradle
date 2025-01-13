@@ -1,6 +1,11 @@
 rootProject.name = 'XHereMobile2'
-apply from: file("../node_modules/@react-native/gradle-plugin/src/main/kotlin/react.gradle")
+apply from: file("../node_modules/@react-native/gradle-plugin/src/main/kotlin/react.gradle") applyNativeModulesSettingsGradle(settings)
+include ':app'
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 include ':app'
-includeBuild('../node_modules/@react-native/gradle-plugin') 
+includeBuild('../node_modules/@react-native/gradle-plugin')
+
+apply plugin: "com.android.application"
+apply plugin: "com.facebook.react"
+apply plugin: "org.jetbrains.kotlin.android" 
